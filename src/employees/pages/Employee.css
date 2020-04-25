@@ -1,0 +1,14 @@
+.employee-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.employee-container > div {
+  padding: 0 2rem;
+}
+
+.employees-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

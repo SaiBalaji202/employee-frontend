@@ -1,0 +1,50 @@
+.modal-window {
+  position: fixed;
+  top: 22vh;
+  left: 20%;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 100;
+}
+
+.modal-window > .header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.modal-window > .body {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+.modal-window > .footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-enter {
+  transform: translateY(-12rem);
+  opacity: 0;
+}
+
+.modal-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all .25s;
+}
+
+.modal-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-exit-active {
+  transform: translateY(-12rem);
+  opacity: 0;
+  transition: all .25s;
+}
